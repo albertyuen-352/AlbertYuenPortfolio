@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Yuen | Mechanical Systems & Design Engineer</title>
+    <style>
+        :root {
+            --primary: #0b2239; 
+            --secondary: #2196F3;
+            --accent: #f39c12;
+            --bg: #fdfdfd;
+            --text-main: #2c3e50;
+            --text-muted: #546e7a;
+        }
+
+        body { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; line-height: 1.7; color: var(--text-main); margin: 0; background-color: var(--bg); }
+        
+        nav { background: white; padding: 1.2rem 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #eee; }
+        .logo { font-weight: 700; font-size: 1rem; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+        nav a { text-decoration: none; color: var(--text-muted); margin-left: 25px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: var(--secondary); }
+
+        header { background: var(--primary); color: white; padding: 100px 10% 80px; text-align: left; }
+        header h1 { font-size: 3.5rem; margin: 0; font-weight: 800; line-height: 1.1; }
+        header p { font-size: 1.2rem; opacity: 0.8; max-width: 650px; margin: 25px 0 40px; font-weight: 300; }
+        .btn { border: 2px solid var(--secondary); color: white; background: var(--secondary); padding: 14px 35px; text-decoration: none; font-weight: 700; border-radius: 4px; transition: 0.3s; display: inline-block; }
+
+        .container { max-width: 1100px; margin: 80px auto; padding: 0 20px; }
+        h2 { font-size: 2rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); margin-bottom: 60px; text-align: center; }
+        h2::after { content: ''; display: block; width: 60px; height: 4px; background: var(--accent); margin: 15px auto; }
+
+        .project-block { margin-bottom: 120px; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #f0f0f0; }
+        .project-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .project-header h3 { font-size: 1.8rem; margin: 0; color: var(--primary); }
+        .project-tags { font-size: 0.75rem; font-weight: 700; color: var(--secondary); text-transform: uppercase; letter-spacing: 1.5px; display: block; margin-bottom: 5px; }
+
+        .image-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 40px; }
+        .img-container { 
+            background: #fcfcfc; 
+            border: 1px solid #f0f0f0;
+            height: 350px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .img-container img { max-width: 95%; max-height: 95%; object-fit: contain; }
+        .img-caption { font-size: 0.7rem; color: #999; text-align: center; margin-top: 10px; text-transform: uppercase; font-weight: 600; }
+
+        .strategic-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .column h4 { font-size: 0.85rem; text-transform: uppercase; color: var(--accent); margin-bottom: 15px; letter-spacing: 1px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        .column p, .column li { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
+        .column ul { padding-left: 18px; }
+
+        footer { background: var(--primary); color: white; padding: 60px 10%; text-align: center; }
+        footer p { margin: 5px 0; opacity: 0.7; font-size: 0.9rem; }
+
+        @media (max-width: 900px) {
+            .strategic-grid, .image-gallery { grid-template-columns: 1fr; }
+            .img-container { height: 280px; }
+            header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Albert Yuen // Portfolio</div>
+    <div>
+        <a href="#work">Work</a>
+        <a href="mailto:albertyuen352@gmail.com">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Mechanical Systems <br>& Design Engineering</h1>
+    <p>Undergraduate Mechanical Engineer at UMBC. Specializing in high-precision manufacturing, medical device design, and mechatronics.</p>
+    <a href="https://www.linkedin.com/in/albertyuen352" class="btn">LINKEDIN PROFILE</a>
+</header>
+
+<div class="container" id="work">
+    
+    <h2>Selected Case Studies</h2>
+
+    <div class="project-block">
+        <div class="project-header">
+            <span class="project-tags">EndoMaster Medical Inc. | Surgical Instrumentation</span>
+            <h3>Endoscopic Component Optimization</h3>
+        </div>
+        <div class="image-gallery">
+            <div><div class="img-container"><img src="ENDOSCOPE 1.jpg" alt="Technical CAD"></div><div class="img-caption">Technical CAD Analysis</div></div>
+            <div><div class="img-container"><img src="ENDOSCOPE 2.jpg" alt="Machined Part"></div><div class="img-caption">Final Machined Prototype</div></div>
+        </div>
+        <div class="strategic-grid">
+            <div class="column"><h4>The Objective</h4><p>Design and improve endoscopic components to meet high client demand and OEM compatibility.</p></div>
+            <div class="column"><h4>Technical Methodology</h4><p>Utilized Fusion 360 for CNC programming. Reverse-engineered OEM parts using 3D measurement systems.</p></div>
+            <div class="column"><h4>Industrial Impact</h4><p>Produced parts active in the repair market, compatible with proprietary and OEM assemblies.</p></div>
+        </div>
+    </div>
+
+    <div class="project-block">
+        <div class="project-header">
+            <span class="project-tags">EndoMaster Medical Inc. | Tooling & Fixtures</span>
+            <h3>Composite Air Grinder Fixture</h3>
+        </div>
+        <div class="image-gallery">
+            <div><div class="img-container"><img src="GRINDER 1.jpg" alt="Fixture CAD"></div><div class="img-caption">Fixture CAD Design</div></div>
+            <div><div class="img-container"><img src="GRINDER 2.jpg" alt="Physical Assembly"></div><div class="img-caption">Physical Assembly</div></div>
+        </div>
+        <div class="strategic-grid">
+            <div class="column"><h4>The Objective</h4><p>Create an adjustable-angle fixture for air grinders used in distal end assembly.</p></div>
+            <div class="column"><h4>Technical Methodology</h4><p>Modeled in Fusion 360. Fabricated base and tower with curved slots using manual milling and scrap metal.</p></div>
+            <div class="column"><h4>Industrial Impact</h4><p>Enables precision grinding at user-adjusted angles within vacuum enclosures for particle disposal.</p></div>
+        </div>
+    </div>
+
+    <div class="project-block">
+        <div class="project-header">
+            <span class="project-tags">University Project | Mechatronics</span>
+            <h3>Inverted Pendulum System</h3>
+        </div>
+        <div class="image-gallery">
+            <div><div class="img-container"><img src="PENDULUM 1.jpg" alt="Assembly"></div><div class="img-caption">SolidWorks Assembly</div></div>
+            <div><div class="img-container"><img src="PENDULUM 2.jpg" alt="Logic Prototype"></div><div class="img-caption">Logic & Controls Prototype</div></div>
+        </div>
+        <div class="strategic-grid">
+            <div class="column"><h4>The Objective</h4><p>Design a dynamic system to balance a pendulum’s center of gravity over its pivot point.</p></div>
+            <div class="column"><h4>Technical Methodology</h4><p>Designed in SolidWorks. Utilized Arduino for control logic. Manufactured via 3D printing and milling.</p></div>
+            <div class="column"><h4>Industrial Impact</h4><p>Successfully fulfilled client design requirements for mechatronic stabilization benchmarks.</p></div>
+        </div>
+    </div>
+
+    <div class="project-block">
+        <div class="project-header">
+            <span class="project-tags">University Project | Human-Centered Design</span>
+            <h3>Visually Impaired Children's Toy</h3>
+        </div>
+        <div class="image-gallery">
+            <div><div class="img-container"><img src="TOY 1.jpg" alt="Tactile Design"></div><div class="img-caption">Tactile Interface Design</div></div>
+            <div><div class="img-container"><img src="TOY 2.jpg" alt="Internal Mechanism"></div><div class="img-caption">Crank & Gear Mechanism</div></div>
+        </div>
+        <div class="strategic-grid">
+            <div class="column"><h4>The Objective</h4><p>Design an interactive "mix and match" toy using shapes and textures for visually impaired children.</p></div>
+            <div class="column"><h4>Technical Methodology</h4><p>Designed in SolidWorks. Utilized a gear and crank system to maintain unpredictability. Analyzed material safety/weight.</p></div>
+            <div class="column"><h4>Industrial Impact</h4><p>Developed a tactile, button-activated toy that fulfilled all accessibility and safety requirements.</p></div>
+        </div>
+    </div>
+
+    <div class="project-block">
+        <div class="project-header">
+            <span class="project-tags">University Project | Robotics</span>
+            <h3>UROS (UMBC Robotics on the Surface)</h3>
+        </div>
+        <div class="image-gallery">
+            <div><div class="img-container"><img src="UROS 1.jpg" alt="Robot CAD"></div><div class="img-caption">Mechanical System CAD</div></div>
+            <div><div class="img-container"><img src="UROS 2.jpg" alt="Robot Physical"></div><div class="img-caption">Competition Field Testing</div></div>
+        </div>
+        <div class="strategic-grid">
+            <div class="column"><h4>The Objective</h4><p>Build a maneuverable robot capable of complex task execution for competition.</p></div>
+            <div class="column"><h4>Technical Methodology</h4><p>Designed elevator shaft, motor/gear assembly, treads, and claw. Performed cost-benefit analysis for fabrication.</p></div>
+            <div class="column"><h4>Industrial Impact</h4><p>Successfully traversed competition courses and completed all intended mechanical tasks.</p></div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p><b>Albert Yuen</b> // Mechanical Engineer</p>
+    <p>301-775-7666 // albertyuen352@gmail.com</p>
+</footer>
+
+</body>
+</html>
